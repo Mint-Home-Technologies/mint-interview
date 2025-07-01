@@ -8,5 +8,12 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true
     },
-    "include": ["01-typescript/src/**/*", "02-frontend/src/**/*", "01-typescript/tests/**/*", "02-frontend/tests/**/*"]
+    "include": [
+      "01-typescript/src/**/*",
+      "02-frontend/src/**/*",
+      "03-concurrent-fibonacci/src/**/*",
+      "01-typescript/tests/**/*",
+      "02-frontend/tests/**/*",
+      "03-concurrent-fibonacci/tests/**/*"
+    ]
   }
