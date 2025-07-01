@@ -1,44 +1,24 @@
 # Programming challenges
 
-This repository contains three exercises focused on TypeScript/algorithm skills and basic frontend development with React or Next.js.
+This repository provides a single exercise.
 
 ## Exercises
 
-1. **01-typescript** – Implement an algorithmic function in TypeScript.
-2. **02-frontend** – Build a UI component using React or Next.js.
-3. **03-concurrent-fibonacci** – Calculate Fibonacci numbers with concurrent memoization in TypeScript.
+1. **01-concurrent-fibonacci** – Calculate Fibonacci numbers with concurrent memoization in TypeScript.
 
-Each folder includes a `README.md` with detailed instructions and automated tests you must satisfy.
+Run `npm test` from the repository root to execute the tests.
 
-### General requirements
+## Additional Requirement
 
-1. Install dependencies by running `npm install` from the repository root.
-2. Implement your solutions inside each folder.
-3. Run `npm test` to execute all tests.
-4. Create a pull request with your completed solutions once all tests pass.
+Create a separate repository using **Next.js** and **NestJS** that implements a multi-step wizard:
 
-## Structure
+1. Ask the customer for their address.
+2. Ask how many AC units they have (1, 2, more than 3, or "I don't know").
+   - If they select **more than 3** or **I don't know**, navigate to a page where they enter their name and phone number and inform them that we will contact them.
+3. If they choose **1** or **2**, let them select the system type (split, package, or "I don't know").
+   - Choosing **I don't know** should also lead to the contact page mentioned above.
+4. Select the heating type (heat pump or gas).
+5. Show a page where they enter their name, phone number, and email.
+6. Display a confirmation page after the flow is complete.
 
-```
-.
-├── 01-typescript
-│   ├── README.md
-│   ├── src
-│   │   └── index.ts
-│   └── tests
-│       └── index.test.ts
-├── 02-frontend
-│   ├── README.md
-│   ├── src
-│   │   └── Posts.tsx
-│   └── tests
-│       └── Posts.test.tsx
-├── 03-concurrent-fibonacci
-│   ├── README.md
-│   ├── src
-│   │   └── index.ts
-│   └── tests
-│       └── index.test.ts
-```
-
-Each challenge provides a starter file with `TODO` comments for your solution. Once completed, all tests should pass when you run them.
+You are free to choose the look and feel and any libraries. Use a local database, for example **SQLite**. Provide the code and a README explaining how to run the project, either in a GitHub repository or as a ZIP file.
