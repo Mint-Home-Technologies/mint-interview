@@ -1,25 +1,51 @@
-# Programming challenges
+# Mint Home Technologies - Technical Interview Challenges
 
-This repository provides a single exercise.
+Welcome to the Mint Home technical interview process! This repository contains two coding challenges that will help us evaluate your technical skills and problem-solving approach.
 
-## Exercises
+## Overview
 
-1. **01-concurrent-fibonacci** – Calculate Fibonacci numbers with concurrent memoization in TypeScript.
+As an HVAC company, we provide users with the capability to request quotes for our services. These challenges are designed to assess your ability to work with technologies relevant to our stack and simulate real-world scenarios you might encounter.
 
-Run `npm test` from the repository root to execute the tests.
+## Challenges
 
-## Additional Requirement
+### 1. Concurrent Fibonacci (TypeScript)
 
-Create a separate repository using **Next.js** and **NestJS** that implements a multi-step wizard:
+**Location:** [01-concurrent-fibonacci](./01-concurrent-fibonacci)
 
-1. Ask the customer for their address.
-2. Ask how many AC units they have (1, 2, more than 3, or "I don't know").
-   - If they select **more than 3** or **I don't know**, navigate to a page where they enter their name and phone number and inform them that we will contact them.
-3. If they choose **1** or **2**, let them select the system type (split, package, or "I don't know").
-   - Choosing **I don't know** should also lead to the contact page mentioned above.
-4. Select the heating type (heat pump or gas).
-5. Show a page where they enter their name, phone number, and email.
-6. Display a confirmation page after the flow is complete.
-7. Integrate a **NestJS** backend. It must use **SQLite** to store user data and expose all APIs needed by the wizard with validations and basic tests. The frontend should call the backend to determine the next step. For example, POST the user's answers to `/api/wizard/next-step` and store contact details through `/api/users`.
+Implement a concurrent memoized Fibonacci function in TypeScript. This challenge tests your understanding of:
+- Asynchronous programming
+- Memoization techniques
+- Handling concurrent operations efficiently
 
-You are free to choose the look and feel and any libraries. Use a local database, for example **SQLite**. Provide the code and a README explaining how to run the project, either in a GitHub repository or as a ZIP file. Document how to start both the frontend and the backend.
+To run the tests:
+```bash
+npm test 01-concurrent-fibonacci
+```
+
+### 2. Multi-Step Wizard Application (Next.js & NestJS)
+
+**Location:** [02-wizard-application](./02-wizard-application)
+
+Create a full-stack application that simulates a quote request wizard for HVAC services. This challenge tests your ability to:
+- Build a multi-step form with conditional logic
+- Implement a RESTful API with proper validation
+- Work with databases
+- Write tests for both frontend and backend
+
+## Submission Guidelines
+
+1. For the first challenge, implement your solution directly in the provided files.
+2. For the second challenge, create a new repository or provide a ZIP file with your complete solution.
+3. Include clear documentation on how to run your applications.
+4. Submit your solutions according to the instructions provided by our hiring team.
+
+## Evaluation Criteria
+
+We will evaluate your submission based on:
+- Code quality and organization
+- Problem-solving approach
+- Adherence to requirements
+- Documentation quality
+- Test coverage
+
+Good luck! We look forward to reviewing your solutions.
