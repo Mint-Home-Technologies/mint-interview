@@ -20,5 +20,6 @@ Create a separate repository using **Next.js** and **NestJS** that implements a 
 4. Select the heating type (heat pump or gas).
 5. Show a page where they enter their name, phone number, and email.
 6. Display a confirmation page after the flow is complete.
+7. Integrate a **NestJS** backend. It must use **SQLite** to store user data and expose all APIs needed by the wizard with validations and basic tests. The frontend should call the backend to determine the next step. For example, POST the user's answers to `/api/wizard/next-step` and store contact details through `/api/users`.
 
-You are free to choose the look and feel and any libraries. Use a local database, for example **SQLite**. Provide the code and a README explaining how to run the project, either in a GitHub repository or as a ZIP file.
+You are free to choose the look and feel and any libraries. Use a local database, for example **SQLite**. Provide the code and a README explaining how to run the project, either in a GitHub repository or as a ZIP file. Document how to start both the frontend and the backend.
