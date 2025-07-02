@@ -1,25 +1,44 @@
-# Programming challenges
+# Mint Home - Take Home Challenge
 
-This repository provides a single exercise.
+Welcome to the Mint Home take home challenge! This repo contains two coding challenges that will help us evaluate your technical skills and problem-solving approach.
 
-## Exercises
+## Overview
 
-1. **01-concurrent-fibonacci** – Calculate Fibonacci numbers with concurrent memoization in TypeScript.
+At Mint Home, we’re revolutionizing HVAC replacements by empowering homeowners to:
 
-Run `npm test` from the repository root to execute the tests.
+- Get instant, AI-driven quotes, no in-home sales visits, all generated online in minutes 
+- Compare transparent pricing options, including rebates and flexible financing 
+- Schedule professional installation, as soon as the very next day 
 
-## Additional Requirement
+We use software to simplify a traditionally complex, sales-heavy process, cutting out hassle and hidden fees while ensuring quality HVAC installations.
 
-Create a separate repository using **Next.js** and **NestJS** that implements a multi-step wizard:
+This take home challenge have been crafted to mirror real-world scenarios of our platform. It will assess your ability to build solutions using our stack and tackle scenarios similar to what our engineers face on a daily basis.
 
-1. Ask the customer for their address.
-2. Ask how many AC units they have (1, 2, more than 3, or "I don't know").
-   - If they select **more than 3** or **I don't know**, navigate to a page where they enter their name and phone number and inform them that we will contact them.
-3. If they choose **1** or **2**, let them select the system type (split, package, or "I don't know").
-   - Choosing **I don't know** should also lead to the contact page mentioned above.
-4. Select the heating type (heat pump or gas).
-5. Show a page where they enter their name, phone number, and email.
-6. Display a confirmation page after the flow is complete.
-7. Integrate a **NestJS** backend. It must use **SQLite** to store user data and expose all APIs needed by the wizard with validations and basic tests. The frontend should call the backend to determine the next step. For example, POST the user's answers to `/api/wizard/next-step` and store contact details through `/api/users`.
+## Challenges
 
-You are free to choose the look and feel and any libraries. Use a local database, for example **SQLite**. Provide the code and a README explaining how to run the project, either in a GitHub repository or as a ZIP file. Document how to start both the frontend and the backend.
+### 1. Concurrent Fibonacci (TypeScript)
+
+**Location:** [01-concurrent-fibonacci](./01-concurrent-fibonacci)
+
+Implement a concurrent memoized Fibonacci function in TypeScript. This challenge tests your understanding of:
+- Algorithms
+- Asynchronous programming
+- Memoization techniques
+- Handling concurrent operations efficiently
+
+
+### 2. Multi-Step Wizard Application (Next.js & NestJS)
+
+**Location:** [02-wizard-application](./02-wizard-application)
+
+Create a simple full-stack application that simulates a multi-step quote request wizard for HVAC installation services. This challenge tests your ability to:
+- Build a multi-step form with simple conditional logic
+- Implement a RESTful API
+- Work with a databases
+
+## Submission Guidelines
+
+1. For your submission, create a new public repository or provide a ZIP file with your complete solution, so we can run it locally.
+2. Include clear documentation on how to run the solutions to both challenges.
+
+Good luck! We look forward to reviewing your solutions.
