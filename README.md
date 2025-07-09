@@ -32,9 +32,9 @@ Implement a concurrent memoized Fibonacci function in TypeScript. This challenge
 **Location:** [02-wizard-application](./02-wizard-application)
 
 Create a simple full-stack application that simulates a multi-step quote request wizard for HVAC installation services. This challenge tests your ability to:
-- Build a multi-step frontend app using Next.js
-- Implement a RESTful API using NestJS
-- Work with a databases of your choice
+- Build a multi-step form with simple conditional logic
+- Implement a RESTful API
+- Work with a databases
 
 ## Submission Guidelines
 

@@ -9,7 +9,7 @@
       "forceConsistentCasingInFileNames": true
     },
     "include": [
-      "./src/**/*",
-      "./tests/**/*"
+      "01-concurrent-fibonacci/src/**/*",
+      "01-concurrent-fibonacci/tests/**/*"
     ]
   }
